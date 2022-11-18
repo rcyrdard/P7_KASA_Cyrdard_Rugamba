@@ -1,0 +1,47 @@
+/* /////  LE COMPOSANT TAGS DESKTOP  ////// */
+
+.tags {
+    margin-bottom: 0;
+    margin-top: 25px;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.tagText {
+    padding: 4px 40px;
+    font-size: 14px;
+    list-style: none;
+    font-weight: 500;
+    border-radius: 10px;
+    color: white;
+    background-color: #FF6060;
+}
+
+
+
+
+
+/* /////  LE COMPOSANT TAGS TABLETTE  ////// */
+
+@media screen and (min-width: 580px) and (max-width: 980px) {
+
+    .tagText {
+        font-size: 10px;
+    }
+}
+
+
+/* /////  LE COMPOSANT TAGS MOBILE  ////// */
+
+@media screen and (max-width: 580px) {
+    .tags {
+        margin: 10px 0 0 0;
+    } 
+    
+    .tagText {
+        padding: 3px 20px 3px 20px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,59 @@
+
+/* //////////  FOOTER DESKTOP  //////////// */
+
+
+footer {
+  /* width: 1440px; */
+  width: 100%;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: #000000;
+}
+
+footer > p {
+  width: 513px;
+  height: 46px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+footer > img {
+  width: 122px;
+  height: 39px;
+}
+
+
+
+/* //////////  FOOTER TABLETTE  //////////// */
+
+@media screen and (min-width: 580px) and (max-width: 980px) {
+
+  footer{
+    width: 100%;
+  }
+
+}
+
+
+
+/* //////////  FOOTER MOBILE  //////////// */
+
+@media screen and (max-width: 580px) {
+
+    footer {
+      /* width: 375px; */
+      width: 100%;
+    }
+
+    footer > p { 
+      width: inherit;
+      font-size: 12px;
+    }
+
+}

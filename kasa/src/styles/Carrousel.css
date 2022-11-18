@@ -1,0 +1,105 @@
+/* /////////  COMPOSANT CARROUSEL DESKTOP  ///////// */
+
+.carroussel {
+    position: relative;
+    width: 1240px;
+    height: 415px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.carroussel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carroussel-span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.fleche-left {
+    z-index: 1;
+    position: absolute;
+    bottom: 43%;
+    left: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.fleche-right  {
+    z-index: 1;
+    position: absolute;
+    bottom: 43%;
+    right: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+
+
+
+
+@media screen and (min-width: 580px) and (max-width: 980px) {
+
+    .carroussel{
+        width: 560px;
+    }
+    .carroussel-span{
+        font-size: 17px;
+    }
+    .fleche-left,
+    .fleche-right{
+        height: 40px;
+    }
+
+}
+
+
+
+
+/* /////////  COMPOSANT CARROUSEL MOBILE  ///////// */
+
+@media screen and (max-width: 580px) {
+    .carroussel {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .fleche-left,
+    .fleche-right{
+        height: 24px;
+    }
+
+    .fleche-left{
+        left: 20px;
+    }
+
+    .fleche-right{
+        right: 20px;
+    }
+
+    .carroussel-span {
+        display: none;
+    }
+
+    
+}
+
+
+
+
+
+
+

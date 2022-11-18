@@ -1,0 +1,72 @@
+/* //////  PAGE APROPOS DESKTOP  //////// */
+
+.container-apropos{
+    margin-bottom: 30px;
+    /* max-width: 1440px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-apropos > img{
+    width: 1239px;
+    border-radius: 25px;
+    background-color: #000000;
+    filter: invert(10%);
+}
+
+.container_dropdown {
+    width: 1023px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* //////  PAGE APROPOS TABLETTE  //////// */
+
+@media screen and (min-width: 580px) and (max-width: 980px) {
+
+    .container-apropos{
+        margin: 0 auto;
+        width: 560px;
+    }
+    .container-apropos > img{
+        width: 560px;
+        border-radius: 10px;
+    }
+    .container_dropdown{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width: 560px;
+    }
+
+}
+
+
+
+/* //////  PAGE APROPOS MOBILE  //////// */
+
+@media screen and (max-width: 580px) {
+
+    .container-apropos{
+        margin: 0 auto;
+        width: 336px;
+    }
+    .container-apropos > img{
+        width: 335px;
+        border-radius: 10px;
+    }
+    .container_dropdown{
+        width: 336px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+/* //////  COMPOSANT DROPDOWN DESKTOP  /////// */
+
+.dropTitle {
+    padding: 16px 10px 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background: #FF6060;
+}
+
+.dropBas {
+    transform: rotate(180deg);
+    cursor: pointer;
+    opacity: 0.87;
+} 
+
+.dropHaut {
+    transform: rotate(0deg);
+    cursor: pointer;
+    opacity: 0.87;
+}
+
+.dropText {
+    padding: 20px;
+    margin: 10px 0;
+    font-weight: 400;       
+    font-size: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #FF6060;
+    background: #F6F6F6;
+}
+
+
+/* //////  COMPOSANT DROPDOWN TABLETTE  /////// */
+
+@media screen and (min-width: 580px) and (max-width: 980px) {
+
+    .dropTitle{
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+
+/* //////  COMPOSANT DROPDOWN MOBILE  /////// */
+
+@media screen and (max-width: 580px) {
+
+    .dropTitle {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .dropBas, 
+    .dropHaut {
+        width: 18px;
+        opacity: 0.87;
+    }
+
+    .dropText{
+        font-size: 13px;
+    }
+
+
+
+}
+
+
+
+

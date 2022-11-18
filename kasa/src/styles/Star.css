@@ -1,0 +1,43 @@
+/* ////////  COMPOSANT STAR DESKTOP  /////// */
+
+.star{
+    width: 196px;
+    height: 36px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 13px;
+}
+
+/* ////////  COMPOSANT STAR TABLETTE  /////// */
+
+@media screen and (min-width: 580px) and (max-width: 980px) {
+
+    .star{
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+
+}
+
+
+
+/* ////////  COMPOSANT STAR MOBILE  /////// */
+
+@media screen and (max-width: 580px) {
+
+    .StarRouge, .StarGrise{
+        width: 15px;
+        height: 15px;
+    }
+
+    .star{
+        width: 98px;
+        height: 18px;
+        justify-content: flex-start;
+        gap: 7px;
+    }
+
+    
+
+}

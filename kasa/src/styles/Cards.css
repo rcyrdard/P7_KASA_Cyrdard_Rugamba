@@ -1,0 +1,87 @@
+
+/* ////////  les cartes logements  //////////  */
+
+/* ////////  DESKTOP  ///////// */
+
+.gallery{
+    width: 1240px;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 25px;
+    background-color: #F7F7F7;
+}
+
+/* Chaque carte est cliquable et envois sur sa fiche-logement */
+.gallery > a{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    cursor: pointer;
+}
+
+a > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #FF6060;
+    object-fit: cover;
+}
+
+a > h3{
+    position: absolute;
+    bottom: 0px;
+    margin-left: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+
+
+/* ////////  TABLETTE  ///////// */
+
+@media screen and (min-width: 580px) and (max-width: 980px) {
+
+    /* dimunition des marges entre les cards  */
+    .gallery{
+        width: 560px;
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+}
+
+
+/* //////////  MOBILE  /////////// */
+
+@media screen and (max-width: 580px) {
+
+    .gallery{
+        width: 335px;
+        gap: 20px;
+        padding: inherit;
+    }
+
+    .gallery > a{
+        width: 335px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

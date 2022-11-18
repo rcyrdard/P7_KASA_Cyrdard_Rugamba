@@ -1,0 +1,214 @@
+/* ///////  PAGE FICHELOGEMENT DESKTOP  /////// */
+
+.container-fichelogement {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 1238px;
+}
+
+.container-titre-host{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titre {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-location > h1 {
+    margin-bottom: 0;
+    margin-top: 37px;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FF6060;
+}
+
+.host {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.host-picture {
+    border: 2px solid #F7F7F7;
+}
+
+.host img {
+    width: 64px; 
+    height: 64px;
+    border-radius: 50%;  
+}
+
+.span-host {
+    width: 93px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    text-align: right;
+}
+
+.titre-location > p{
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+}
+
+.host-star{
+    padding-top: 24px;
+    margin-bottom: 7px;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.description h3,
+.equipements h3 {
+    position: relative;
+    left: 20px;
+    top: -5px;
+    width: 106px;
+    height: 26px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* .chevron2,
+.chevron3 {
+    position: relative;
+    right: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+} */
+
+.dropFichelogement {
+    margin-top: 24px;
+    width: 1235px;  
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.dropFiche-Description, 
+.dropFiche-Equipements {
+    width: 575px;
+}
+
+.dropFiche-Equipements ul {
+    margin-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: left;
+}
+
+
+
+/* ///////  PAGE FICHELOGEMENT TABLETTE  /////// */
+
+@media screen and (min-width: 580px) and (max-width: 980px) {
+
+    .container-fichelogement{
+        width: 560px;
+        margin-bottom: 60px;
+    }
+
+    .dropFichelogement{
+        width: 560px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .titre-location > h1{
+        font-size: 24px;
+    }
+    .container-titre-host{
+        flex-direction: column;
+    }
+    .host-star{
+        width: 560px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .titre{
+        width: 560px;
+    }
+
+}
+
+
+/* ///////  PAGE FICHELOGEMENT MOBILE  /////// */
+
+@media screen and (max-width: 580px) {
+
+    .container-fichelogement {
+        width: 335px;
+        margin-bottom: 0;
+    }
+
+    .dropFichelogement {
+        margin-top: 16px;
+        width: initial;
+        flex-direction: column;
+    }
+
+    .container-titre-host{
+        flex-direction: column;
+    }
+
+    .titre{
+        width: initial;
+    }
+
+    .host > img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .span-host{
+        width: 93px;
+        height: 33px;
+        font-size: 12px;
+    }
+
+    .host-star{
+        margin: 0;
+        padding-top: 16px;
+        width: 335px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dropFiche-Description,
+    .dropFiche-Equipements {
+        width: 335px;
+        margin-bottom: 26px;
+    }
+
+    .titre-location > h1{
+        font-size: 18px;
+        margin: 10px 0 0 0;
+    }
+
+    .titre-location > p{
+        font-size: 14px;
+        margin: 10px 0 0 0;
+    }
+
+
+}
