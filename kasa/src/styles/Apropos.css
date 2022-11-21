@@ -1,15 +1,16 @@
 /* //////  PAGE APROPOS DESKTOP  //////// */
 
 .container-apropos{
+    margin: 0 auto;
     margin-bottom: 30px;
-    /* max-width: 1440px; */
+    max-width: 1240px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .container-apropos > img{
-    width: 1239px;
+    width: 100%;
     border-radius: 25px;
     background-color: #000000;
     filter: invert(10%);
@@ -33,6 +34,7 @@
     }
     .container-apropos > img{
         width: 560px;
+        height: 223px;
         border-radius: 10px;
     }
     .container_dropdown{
@@ -55,6 +57,7 @@
     }
     .container-apropos > img{
         width: 335px;
+        height: 223px;
         border-radius: 10px;
     }
     .container_dropdown{

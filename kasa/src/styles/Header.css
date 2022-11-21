@@ -2,7 +2,7 @@
 
 header{
     margin: 40px auto;
-    width: 1240px;
+    max-width: 1240px;
     height: 68px;
     display: flex;
     justify-content: space-between;

@@ -12,18 +12,16 @@ import Apropos from './pages/Apropos'
 export default function Routing() {
     
     return (
-        <div className='route'>
-            <Router>
-                <Header />
-            <Routes>
-                <Route exact path="/" element={<Home />}/>
-                <Route path="/logements/:id" element={<FicheLogement />}/>
-                <Route path="/Apropos" element={<Apropos/>}/>
-                <Route path="/*" element={<Error/>}/>
-            </Routes>
-                <Footer />
-            </Router>
-        </div>
+        <Router>
+            <Header />
+        <Routes>
+            <Route exact path="/" element={<Home />}/>
+            <Route path="/logements/:id" element={<FicheLogement />}/>
+            <Route path="/Apropos" element={<Apropos/>}/>
+            <Route path="/*" element={<Error/>}/>
+        </Routes>
+            <Footer />
+        </Router>
     );
 
 }

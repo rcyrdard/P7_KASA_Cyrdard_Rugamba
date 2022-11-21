@@ -1,5 +1,4 @@
 import React from 'react'
-// import { useParams } from 'react-router-dom'
 import logoKasa from '../assets/KASA.png'
 import {NavLink} from "react-router-dom"
 import '../styles/Header.css'

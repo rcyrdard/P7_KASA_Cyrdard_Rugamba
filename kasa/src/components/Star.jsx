@@ -1,4 +1,3 @@
-
 import React from "react";
 import RedStar from "../assets/RedStar.png";
 import GrayStar from "../assets/GrayStar.png";
