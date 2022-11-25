@@ -27,14 +27,17 @@ export default function FicheLogement ()
                                           <h1>{logement.title}</h1>
                                           <p>{logement.location}</p>
                                    </div>
+                                   {/* affichage la liste des tags code ds le comosant tags  */}
                                    <Tags tags={logement.tags} />
                             </div>
+                            
                             <div className="host-star">
                                    <div className="host">
                                           <span className="span-host">{logement.host.name}</span>
                                           <img src={logement.host.picture} alt="" />
                                    </div>
                                    <div className="star">
+                                          {/* affichage rating une fois le chois de la couleur fait ds le composant  */}
                                           <Star rating={logement.rating} />
                                    </div>
                             </div>
